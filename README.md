@@ -106,17 +106,15 @@ Gambar :
 -	Nano /var/www/semerue10.pw/.htaccsess
 -	A2enmod rewrite
 -	Apache restart
--	RewriteEngine On = untuk flag bahwa menggunakan module rewrite
--	RewriteCond %{REQUEST_FILENAME} !-d = aturan tidak akan jalan ketika yang diakses adalah directory (d)
--	RewriteRule ^([^\.]+)$ $1.php [NC,L] = $1 adalah parameter input yang akan dicari oleh webserver
 -	Edit semerue10.pw.conf pada PROBOLINGGO
 -	Apache restart
 
+
 Gambar :
 
-![image](https://user-images.githubusercontent.com/57068224/98975123-504c9000-2548-11eb-915b-d1d24db496a4.png)
-![image](https://user-images.githubusercontent.com/57068224/98975133-52165380-2548-11eb-9cbf-e012e670cf8f.png)
-![image](https://user-images.githubusercontent.com/57068224/98975141-53e01700-2548-11eb-95d8-0a9a3bc41aca.png)
+![image](https://user-images.githubusercontent.com/57068224/99151213-1d330980-26cc-11eb-8862-67b6976e4bc9.png)
+![image](https://user-images.githubusercontent.com/57068224/99151216-1f956380-26cc-11eb-88b5-7322e2c6dab4.png)
+![image](https://user-images.githubusercontent.com/57068224/99151225-2b812580-26cc-11eb-8df2-07fea5a13dbf.png)
 
 ### 10.	Web http://penanjakan.semeruyyy.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semeruyyy.pw
 -	Edit penanjakan.semerue10.pw.conf pada PROBOLINGGO
@@ -180,14 +178,11 @@ Gambar :
 ![image](https://user-images.githubusercontent.com/57068224/98975436-b0433680-2548-11eb-8df4-d76849c66237.png)
 
 ### 16.	Karena dirasa kurang profesional, maka setiap Bibah mengunjungi IP PROBOLINGGO akan dialihkan secara otomatis ke http://semeruyyy.pw.
--	Edit 000-default.conf
--	Ubah DocumentRoot menjadi menuju ke semerue10.pw
--	Apache restart
+- Tambahi Redirect Permanent ke semeru
 
 Gambar :
 
-![image](https://user-images.githubusercontent.com/57068224/98975448-b46f5400-2548-11eb-81dd-456a3887c51c.png)
-![image](https://user-images.githubusercontent.com/57068224/98975456-b6391780-2548-11eb-97b3-30b7fe015a06.png)
+![image](https://user-images.githubusercontent.com/57068224/99151243-49e72100-26cc-11eb-8a9a-df9bbe187dae.png)
 
 ### 17.	Karena pengunjung pada /var/www/penanjakan.semeruyyy.pw/public/images sangat banyak maka semua request gambar yang memiliki substring “semeru” akan diarahkan menuju semeru.jpg.
 
